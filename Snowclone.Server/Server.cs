@@ -7,13 +7,22 @@ using System.Net.Http;
 using System.Net;
 using System.Net.Sockets;
 using System.Collections.Concurrent;
+using System.Threading;
 
 namespace Snowclone.Server
 {
-    public class Server
+    public class Server : IDisposable
     {
         public string IP;
         public int Port;
+
+        private CancellationTokenSource _UserCancellationTokenSource;
+        private CancellationToken _UserCancellationToken;
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
 
         //private ConcurrentBag<Member> memberlist
     }
