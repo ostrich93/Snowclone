@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Snowclone.Models
+namespace Snowclone.Data
 {
-    public class ChannelModel
+    public static class RepositoryExtensions
     {
 
     }

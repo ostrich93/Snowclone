@@ -9,6 +9,8 @@ namespace Snowclone.Models
     //In the Message Entity, the payload is the Content field of MessageModel converted into a byte array.
     public class Post
     {
+        public Guid PostId { get; set; }
+
         public int MessageId { get; set; }
 
         public int MemberId { get; set; }

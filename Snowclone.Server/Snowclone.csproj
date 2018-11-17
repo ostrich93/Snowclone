@@ -108,9 +108,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\BaseEntity.cs" />
+    <Compile Include="Data\EntityState.cs" />
+    <Compile Include="Data\IDataProvider.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\Repository.cs" />
+    <Compile Include="Data\RepositoryExtensions.cs" />
     <Compile Include="Entity\Channel.cs" />
     <Compile Include="Entity\Member.cs" />
     <Compile Include="Entity\Message.cs" />
+    <Compile Include="Entity\NamespaceDbContext.cs" />
     <Compile Include="Models\ChannelModel.cs" />
     <Compile Include="Models\MemberModel.cs" />
     <Compile Include="Models\Post.cs" />
@@ -124,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Managers\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

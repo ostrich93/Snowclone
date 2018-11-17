@@ -19,6 +19,8 @@ namespace Snowclone.Entities
 
         public List<Member> BanList { get; set; } //might replace with IPBanList instead?
 
+        public List<string> IPBans { get; set; }
+
         public int TenantId { get; set; }
 
         public Channel()
