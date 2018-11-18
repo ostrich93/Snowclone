@@ -8,7 +8,7 @@ namespace Snowclone.Data
 {
     public class BaseEntity : IEquatable<BaseEntity>
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
 
         public override bool Equals(object obj)
         {
