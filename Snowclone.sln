@@ -3,18 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowclone.Server", "Snowclone.Server\Snowclone.Server.csproj", "{24431214-53EA-4846-ACC9-D86001B9CF24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowclone", "Snowclone.Server\Snowclone.csproj", "{24431214-53EA-4846-ACC9-D86001B9CF24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowclone.Client", "Snowclone.Client\Snowclone.Client.csproj", "{D037811C-DDED-47C4-A9A3-008518658C01}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{CB131204-8804-4BDC-A78D-235A1C08541E}"
-	ProjectSection(SolutionItems) = preProject
-		Channel.cs = Channel.cs
-		Member.cs = Member.cs
-		Message.cs = Message.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{0D08D6A7-A132-41EB-82AA-D966B67262E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

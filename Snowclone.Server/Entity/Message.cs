@@ -1,36 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Runtime.Serialization;
+using Snowclone.Data;
 
 namespace Snowclone.Entities
 {
-    //not a model, an actual entity
-    public class Message
+
+    public class Message : BaseEntity
     {
         public int MessageId { get; set; }
 
-        public string Content { get; set; }
-
         public int ChannelId { get; set; }
 
-        public string ChannelName { get; set; }
+        public int MemberId { get; set; }
 
-        public int PosterId { get; set; }
+        public Member Member { get; set; }
 
-        public DateTime DateCreated { get; set; }
+        public Channel Channel { get; set; }
 
-        public DateTime DateUpdated { get; set; }
+        //public DateTime CreatedUtc;
 
-        public Dictionary<string, string> Headers;
+        public string Command { get; set; }
 
-        public string ContentType; //might be enum instead?
+        public string Content { get; set; }
 
-        public long ContentLength { get { return Payload.Length; } }
+        //public string ChannelName { get; set; }
 
-        public byte[] Payload;
-
-        public Message()
-        {
-
-        }
     }
 }

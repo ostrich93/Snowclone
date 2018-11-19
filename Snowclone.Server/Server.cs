@@ -8,8 +8,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Collections.Concurrent;
 using System.Threading;
+using Snowclone.Entities;
 
-namespace Snowclone.Server
+namespace Snowclone
 {
     public class Server : IDisposable
     {
