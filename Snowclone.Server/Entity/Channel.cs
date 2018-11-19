@@ -5,7 +5,7 @@ using Snowclone.Data;
 namespace Snowclone.Entities
 {
     //Note: NOT the same as a model.
-    public class Channel
+    public class Channel : BaseEntity
     {
 
         public int ChannelId { get; set; }

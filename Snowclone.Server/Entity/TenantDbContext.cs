@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Relational;
 using Snowclone.Data;
 
 namespace Snowclone.Entities
 {
-    public class NamespaceDbContext : DbContext
+    public class TenantDbContext : DbContext
     {
         public DbSet<Member> Members { get; set; }
         public DbSet<Message> Messages { get; set; }
@@ -20,11 +21,15 @@ namespace Snowclone.Entities
             {
                 entity.HasKey(e => e.MemberId);
 
+                entity.HasIndex(e => e.UserId).IsUnique();
+
                 entity.HasIndex(e => new { e.MemberId, e.Email });
+
+                entity.Property(e => e.UserId).IsRequired();
 
                 entity.Property(e => e.MemberId).ValueGeneratedOnAdd();
 
-                entity.Property(e => e.Email).IsRequired().HasMaxLength(128);
+                entity.Property(e => e.Email).IsRequired().HasColumnType("varchar(128)").HasMaxLength(30);
 
                 entity.Property(e => e.Password).IsRequired().HasMaxLength(30);
 

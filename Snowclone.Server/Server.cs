@@ -10,7 +10,7 @@ using System.Collections.Concurrent;
 using System.Threading;
 using Snowclone.Entities;
 
-namespace Snowclone.Server
+namespace Snowclone
 {
     public class Server : IDisposable
     {
@@ -25,6 +25,6 @@ namespace Snowclone.Server
             throw new NotImplementedException();
         }
 
-        private ConcurrentBag<Member> memberlist
+        //private ConcurrentBag<Member> memberlist
     }
 }

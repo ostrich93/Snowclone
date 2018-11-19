@@ -23,7 +23,7 @@ namespace Snowclone.Entities
 
         public bool IsBanned { get; set; }
 
-        public User User { get; }
+        //public User User { get; }
 
         public Member()
         {

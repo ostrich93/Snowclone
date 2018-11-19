@@ -13,7 +13,7 @@ namespace Snowclone.Entities
 
         public int ChannelId { get; set; }
 
-        public string MemberId { get; set; }
+        public int MemberId { get; set; }
 
         public Member Member { get; set; }
 
