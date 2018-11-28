@@ -4,10 +4,12 @@ using Snowclone.Data;
 
 namespace Snowclone.Entities
 {
-    //Not a model, but an actual entity to be manipulated
+    [Serializable]
     public class Member : BaseEntity
     {
         public int MemberId { get; set; }
+
+        public string Username { get; set; }
 
         public string Handle { get; set; }
 

@@ -6,7 +6,7 @@ using Snowclone.Data;
 
 namespace Snowclone.Entities
 {
-
+    [Serializable]
     public class Message : BaseEntity
     {
         public int MessageId { get; set; }

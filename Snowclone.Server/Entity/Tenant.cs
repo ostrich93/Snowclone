@@ -13,6 +13,8 @@ namespace Snowclone.Entities
 
         public string TenantName { get; set; }
 
+        public string ServerName { get; set; }
+
         public string ConnectionString { get; set; }
 
         public string IPAddress { get; set; }

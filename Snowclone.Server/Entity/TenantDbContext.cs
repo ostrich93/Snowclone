@@ -23,6 +23,8 @@ namespace Snowclone.Entities
 
                 entity.HasIndex(e => e.UserId).IsUnique();
 
+                entity.HasIndex(e => e.Username).IsUnique();
+
                 entity.HasIndex(e => new { e.MemberId, e.Email });
 
                 entity.Property(e => e.UserId).IsRequired();
@@ -34,6 +36,8 @@ namespace Snowclone.Entities
                 entity.Property(e => e.Password).IsRequired().HasMaxLength(30);
 
                 //entity.Property(e => e.UserId).IsRequired();
+
+                entity.Property(e => e.Username).IsRequired().HasMaxLength(30);
 
                 entity.Property(e => e.Handle).IsRequired().HasMaxLength(30);
 

@@ -14,11 +14,15 @@ namespace Snowclone.Entities
 
         //private User _userInfo;
 
-        public int Port { get; set; }
+        public int Port { get; set; } //source Port
 
-        public IPAddress IPAddress { get; set; }
+        public IPAddress IPAddress { get; set; } //source IP
 
         public TcpClient tcpClient { get; set; }
+
+        public bool Connected { get; set; }
+
+        public bool LoggedIn { get; set; }
 
         public void SetMemberData(Member info)
         {

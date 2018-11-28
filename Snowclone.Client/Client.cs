@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Snowclone.Entities;
-using Snowclone.Models;
-using Snowclone.Server;
+using Snowclone.Data;
+using Snowclone.Services;
 using System.Net.Http;
 using System.Net.Sockets;
 
