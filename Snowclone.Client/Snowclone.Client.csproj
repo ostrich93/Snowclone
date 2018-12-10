@@ -120,7 +120,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Snowclone.Server\Snowclone.csproj">
+    <ProjectReference Include="..\Snowclone\Snowclone.csproj">
       <Project>{24431214-53ea-4846-acc9-d86001b9cf24}</Project>
       <Name>Snowclone</Name>
     </ProjectReference>

@@ -7,8 +7,8 @@
     <ProjectGuid>{24431214-53EA-4846-ACC9-D86001B9CF24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Snowclone.Server</RootNamespace>
-    <AssemblyName>Snowclone.Server</AssemblyName>
+    <RootNamespace>Snowclone</RootNamespace>
+    <AssemblyName>Snowclone</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
